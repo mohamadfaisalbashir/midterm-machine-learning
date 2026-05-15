@@ -10,18 +10,19 @@ This repository showcases a range of solutions from unsupervised behavioral segm
 
 ## 📁 Projects Overview
 
-### 1. 🧠 Customer Clustering Pipeline
-**Platform:** ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white)  
-**File:** `customer_clustering_pipeline.ipynb`
+### 1. 🔍 End-to-End Fraud Detection Pipeline
+**Platform:** ![Azure Machine Learning](https://img.shields.io/badge/Azure%20ML-0078D4?style=flat&logo=microsoftazure&logoColor=white)  
+**File:** `fraud_detection.ipynb`
 
-A production-grade segmentation workflow designed to identify customer archetypes through unsupervised learning.
+An advanced MLOps pipeline tackling the complex problem of financial fraud detection in highly imbalanced datasets.
 
-* **Objective:** Transform raw transactional behavior into actionable marketing segments.
-* **Methodology:** * **Preprocessing:** Robust outlier handling and feature scaling.
-    * **Dimensionality Reduction:** PCA implementation to capture 90% variance.
-    * **Optimal k Selection:** Multi-metric consensus using Elbow Method, Silhouette Score, and Davies-Bouldin Index.
-* **Algorithms:** K-Means (Primary), Hierarchical Clustering (Validation), and DBSCAN (Anomalies).
-* **Key Results:** Identified distinct clusters such as *VIP Spenders*, *Dormant Users*, and *Transactors*, enabling targeted CRM strategies.
+* **Objective:** Predict the probability of fraudulent transactions (`isFraud`) using a data-centric approach.
+* **Strategy:**
+    * **Handling Imbalance:** Optimized LightGBM parameters (`is_unbalance=True`) and specialized sampling.
+    * **Auto-ML & Tuning:** Utilized **Optuna** for Bayesian hyperparameter optimization over 50+ trials.
+* **Workflow:** * Experiment tracking on **Azure ML Studio** via MLflow.
+    * Evaluation focusing on **ROC-AUC** and **Precision-Recall** curves to ensure robust detection of minority fraud classes.
+* **Performance:** Scalable implementation capable of processing 700+ features from merged transaction/identity tables.
 
 ---
 
@@ -39,20 +40,18 @@ A highly reproducible regression framework integrated with the Azure ML ecosyste
 
 ---
 
-### 3. 🔍 End-to-End Fraud Detection Pipeline
-**Platform:** ![Azure Machine Learning](https://img.shields.io/badge/Azure%20ML-0078D4?style=flat&logo=microsoftazure&logoColor=white)  
-**File:** `fraud_detection.ipynb`
+### 3. 🧠 Customer Clustering Pipeline
+**Platform:** ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white)  
+**File:** `customer_clustering_pipeline.ipynb`
 
-An advanced MLOps pipeline tackling the complex problem of financial fraud detection in highly imbalanced datasets.
+A production-grade segmentation workflow designed to identify customer archetypes through unsupervised learning.
 
-* **Objective:** Predict the probability of fraudulent transactions (`isFraud`) using a data-centric approach.
-* **Strategy:**
-    * **Handling Imbalance:** Optimized LightGBM parameters (`is_unbalance=True`) and specialized sampling.
-    * **Auto-ML & Tuning:** Utilized **Optuna** for Bayesian hyperparameter optimization over 50+ trials.
-* **Workflow:** * Experiment tracking on **Azure ML Studio** via MLflow.
-    * Evaluation focusing on **ROC-AUC** and **Precision-Recall** curves to ensure robust detection of minority fraud classes.
-* **Performance:** Scalable implementation capable of processing 700+ features from merged transaction/identity tables.
-
+* **Objective:** Transform raw transactional behavior into actionable marketing segments.
+* **Methodology:** * **Preprocessing:** Robust outlier handling and feature scaling.
+    * **Dimensionality Reduction:** PCA implementation to capture 90% variance.
+    * **Optimal k Selection:** Multi-metric consensus using Elbow Method, Silhouette Score, and Davies-Bouldin Index.
+* **Algorithms:** K-Means (Primary), Hierarchical Clustering (Validation), and DBSCAN (Anomalies).
+* **Key Results:** Identified distinct clusters such as *VIP Spenders*, *Dormant Users*, and *Transactors*, enabling targeted CRM strategies.
 ---
 
 ## 🛠️ Tech Stack
