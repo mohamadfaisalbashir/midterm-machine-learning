@@ -95,8 +95,8 @@ This project implements a supervised regression pipeline to predict a continuous
 
 1. In Azure ML Studio, go to **Compute > Compute instances > + New**.
 2. Name the instance and select size:
-   - **Recommended:** `Standard_E4ds_v4` (4 cores, 32 GB RAM)
-   - **Alternative:** `Standard_F16s_v2` (16 cores, 32 GB RAM)
+   - **Recommended:** `Standard_F16s_v2` (16 cores, 32 GB RAM)
+   - **Alternative:** `Standard_E4ds_v4` (4 cores, 32 GB RAM)
 3. Click **Create** and wait ~2–5 minutes for status to become **Running** (green dot).
 
 ### Step 3 — Upload Files via JupyterLab
