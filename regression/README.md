@@ -2,6 +2,11 @@
 
 > **Author:** Mohamad Faisal Bashir · Class: TK-47-04 · NIM: 101032300036
 
+## 🚀 How to View the Full Notebook
+Due to the comprehensive outputs, extensive training logs, and rich visualizations (such as MLFlow plots and LIME insights), this Jupyter Notebook is too large to be rendered natively by GitHub. 
+
+👉 **[Click here to view the fully rendered notebook via NBViewer](https://nbviewer.org/github/mohamadfaisalbashir/midterm-machine-learning/blob/main/regression/regression_mlops.ipynb)**
+
 An end-to-end regression pipeline built with MLOps best practices, featuring automated hyperparameter tuning via Optuna and full experiment tracking with MLflow — deployed on **Azure Machine Learning**.
 
 ---
