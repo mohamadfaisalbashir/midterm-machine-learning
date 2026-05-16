@@ -76,7 +76,8 @@ A production-grade segmentation workflow designed to identify customer archetype
 ### For Azure ML Projects (Regression & Fraud)
 1.  **Workspace:** Ensure you have access to an Azure Machine Learning workspace.
 2.  **Tracking URI:** The notebooks are configured to log to the Azure ML tracking URI.
-3.  **Compute:** Tested on `Standard_E4ds_v4` (4 cores, 32 GB RAM).
+3.  **Compute:** Tested on `Standard_E4ds_v4` (4 cores, 32 GB RAM) for fraud.
+4.  **Compute:** Tested on `Standard_F16s_v2` (16 cores, 32 GB RAM) for fraud.
 
 ### For Google Colab Projects (Clustering)
 1.  **Drive Mounting:** The notebook includes cells to mount Google Drive for data persistence.
