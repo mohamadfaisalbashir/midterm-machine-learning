@@ -57,7 +57,7 @@ This project implements a supervised regression pipeline to predict a continuous
 
 | Category | Library / Tool |
 |----------|---------------|
-| Core ML | `lightgbm` `XGBoost` / `scikit-learn` |
+| Core ML | `lightgbm` `XGBoost` `CatBoost` / `scikit-learn` |
 | Hyperparameter Tuning | `optuna` |
 | Experiment Tracking | `mlflow`, `azureml-mlflow` |
 | Data Processing | `pandas`, `numpy`, `scikit-learn` |
