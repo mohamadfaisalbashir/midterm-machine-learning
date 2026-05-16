@@ -30,6 +30,10 @@ An advanced MLOps pipeline tackling the complex problem of financial fraud detec
 **Platform:** ![Azure Machine Learning](https://img.shields.io/badge/Azure%20ML-0078D4?style=flat&logo=microsoftazure&logoColor=white)  
 **File:** `midterm_regression_mlops.ipynb`
 
+Due to the comprehensive outputs, extensive training logs, and rich visualizations (such as MLFlow plots and LIME insights), this Jupyter Notebook is too large to be rendered natively by GitHub. 
+
+👉 **[Click here to view the fully rendered notebook via NBViewer](https://nbviewer.org/github/mohamadfaisalbashir/midterm-machine-learning/blob/main/regression/regression_mlops.ipynb)**
+
 A highly reproducible regression framework integrated with the Azure ML ecosystem for professional lifecycle management.
 
 * **Objective:** Predict continuous target variables with high precision while maintaining strict experiment tracking.
