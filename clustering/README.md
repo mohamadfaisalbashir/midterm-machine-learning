@@ -27,7 +27,7 @@ This notebook follows a structured, robust methodology designed for production r
 | **Missing Values** | Tiered: Median (<5%) / KNN (5–30%) / Drop (>30%) | Median is robust to skew; KNN preserves feature correlations. |
 | **Outlier Treatment** | IQR Winsorization (1st–99th percentile) | Capping extreme values prevents centroid distortion without losing valuable rows. |
 | **Feature Engineering** | Behavioral ratios (e.g., Utilization, Repayment) | Derived features often reveal richer behavioral signals than raw metrics. |
-| **Scaling** | `RobustScaler` | Scales data by IQR, making it highly resistant to any remaining outliers. |
+| **Scaling** | RobustScaler | Scales data by IQR, making it highly resistant to any remaining outliers. |
 | **Dimensionality Reduction**| PCA (Principal Component Analysis) | Reduces noise and speeds up clustering by keeping components that explain ≥ 90% of the variance. |
 | **Optimal *k* Selection** | Elbow Method, Silhouette Score, Davies-Bouldin | Uses multi-metric consensus to find the mathematical "sweet spot" for cluster count. |
 | **Clustering Algorithms** | K-Means, Hierarchical (Ward), DBSCAN | Triangulates results across centroid-based, connectivity-based, and density-based paradigms. |
@@ -68,7 +68,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn scipy
 ```
 2. Open the Jupyter Notebook:
 ```bash
-jupyter notebook customer_clustering_pipeline.ipynb
+jupyter notebook customer_clustering.ipynb
 ```
 3. Dataset Path: The notebook is currently configured to load data from Google Drive (`/content/drive/MyDrive/ML/clusteringmidterm.csv`). If running locally, update the `DATA_PATH` variable in Section 1 to point to your local dataset.
 4. Run all cells sequentially.
